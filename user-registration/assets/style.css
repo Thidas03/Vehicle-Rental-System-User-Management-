@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login, .registration {
+    border: none;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.login:hover, .registration:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-form, .registration-form {
+    margin-top: 30px;
+}
+
+.registrationForm {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #1877f2;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.registrationForm:hover {
+    color: #166fe5;
+    text-decoration: underline;
+}
+
+.content {
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 95%;
+    max-width: 800px;
+    height: 500px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#editBtn, #deleteBtn {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    color: #1877f2;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#editBtn:hover, #deleteBtn:hover {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+/* Add styles for form inputs and buttons */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #1877f2;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #166fe5;
+}
